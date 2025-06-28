@@ -178,3 +178,21 @@ button {
         margin-top: 410px;
     }
 }
+
+@media (max-width: 490px) {
+    .hero-sec {
+        height: 1000px;
+    }
+}
+
+@media (max-width: 390px) {
+    .hero-sec {
+        height: 900px;
+    }
+}
+
+@media (max-width: 330px) {
+    .hero-sec {
+        height: 800px;
+    }
+}
