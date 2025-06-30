@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+}
+
+.dev-spaceing {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+}

@@ -1,0 +1,211 @@
+.navbar-nav .nav-link {
+    color: #000000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.08px;
+    line-height: 1.2;
+    padding: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    z-index: 1020;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.logo {
+    width: 148px;
+    height: 48px;
+    transition: filter 0.3s ease;
+}
+
+.navbar .btn-outline-light, .offcanvas .btn-outline-light {
+    width: 140px;
+    height: 55px;
+    border-width: 1px;
+    border-radius: 116px;
+    background: #FFFFFF1A;
+    border: 1px solid #EDFF8166;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu {
+    background-color: #023a78c9;
+    padding: 10px 0;
+    min-width: 160px;
+}
+
+.dropdown-menu li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0em;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #023A78;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled .navbar-nav .nav-link {
+    color: #11142D;
+}
+
+.navbar.scrolled .btn-outline-light {
+    border-color: #000;
+    color: #000;
+}
+
+.navbar.scrolled .dropdown-menu {
+    background-color: #f8f9fa;
+}
+
+/* ------------ OFFCANVAS SIDEBAR (mobile) ------------------------------ */
+.offcanvas {
+    background: linear-gradient(328.68deg, #EA5B0C 13.03%, #FFC9AB 120.61%);
+    color: white;
+}
+
+.offcanvas .navbar-nav .nav-link {
+    text-align: start;
+}
+
+.offcanvas .nav-link,
+.offcanvas .dropdown-item {
+    color: white;
+}
+
+.offcanvas .dropdown-item:hover {
+    background-color: #01406c;
+}
+
+.dropdown-toggle-icon {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+svg.burger {
+    border-radius: 4px;
+}
+
+@media (min-width: 992px) {
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 100px;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    .navbar-collapse {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar .btn-outline-light {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .navbar .container-fluid {
+        padding: 0 200px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #023A78;
+        padding: 15px;
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    .navbar-collapse.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        text-align: left;
+        order: 1;
+        margin-right: 0;
+    }
+
+    .navbar .btn-outline-light {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .container-fluid {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+
+    .navbar.scrolled .navbar-collapse {
+        background-color: #ffffff;
+    }
+
+    .navbar.scrolled .navbar-nav .nav-link {
+        color: #11142D;
+    }
+
+    .navbar.scrolled .navbar .btn-outline-light {
+        border: 1px solid #EDFF8166;
+        color: #000;
+    }
+}

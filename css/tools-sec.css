@@ -1,0 +1,27 @@
+.tools-sec {
+    height: 852px;
+    height: auto;
+    overflow: hidden;
+}
+
+.tools-sec-inner {
+    gap: 80px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.tools-sec img {
+    flex-shrink: 0;
+}
+
+@media (max-width: 771px) {
+    .tools-sec-inner  {
+        gap: 40px;
+    }
+
+    .tools-sec img {
+        height: 100px;
+    }
+} 
+

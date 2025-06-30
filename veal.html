@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Veal Stack Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f5f5f5;
+            /* padding: 50px 0; */
+        }
+
+        .veal-container {
+            width: 1180px;
+            height: 1180px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .biggest-veal {
+            width: 966px;
+            height: 966px;
+            border: 2.73px solid #CFCFDB;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+            background: transparent;
+            overflow: visible;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* animation: spinBiggest 20s linear infinite; */
+        }
+
+        @keyframes spinBiggest {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .gradient-line {
+            width: 2px;
+            height: 966px;
+        }
+
+        .yg-gradient {
+            background: linear-gradient(90deg, #FFAC05 -2.46%, #75D900 102.55%);
+        }
+
+        .gb-gradient {
+            background: linear-gradient(90deg, #27FF9C 0%, #271ED9 100%);
+        }
+
+        .ro-gradient {
+            background: linear-gradient(90deg, #FF220A -2.54%, #D9782C 102.47%);
+        }
+
+        .po-gradient {
+            background: linear-gradient(270deg, #FF28A3 -2.59%, #D9711E 102.42%);
+
+        }
+
+        .bp-gradient {
+            background: linear-gradient(270deg, #6674FF -2.45%, #D954CD 102.56%);
+        }
+
+
+        .line-90 {
+            transform: rotate(90deg);
+        }
+
+        .line-45 {
+            transform: rotate(45deg);
+        }
+
+        .line-180 {
+            transform: rotate(180deg);
+        }
+
+        .line-135 {
+            transform: rotate(135deg);
+        }
+
+        .long-veal-white {
+            width: 549px;
+            height: 549px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: visible;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* animation: counterSpin 20s linear infinite; */
+        }
+
+        .long-veal-gradient {
+            width: 440px;
+            height: 440px;
+            background: linear-gradient(90deg, #6674FF 0%, #D954CD 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .short-veal-inner-white {
+            width: 380px;
+            height: 380px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 4;
+            color: #001E61;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 65px;
+            letter-spacing: 2%;
+            text-align: center;
+            padding: 0 40px;
+        }
+
+        .short-veal-white {
+            width: 242px;
+            height: 242px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 5;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* animation: counterSpin 20s linear infinite; */
+        }
+
+        .short-veal-gradient {
+            width: 173px;
+            height: 173px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .short-veal-inner-small {
+            width: 170px;
+            height: 170px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .short-veal-inner-small span {
+            color: #001E61;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+
+        @keyframes counterSpin {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            to {
+                transform: translate(-50%, -50%) rotate(-360deg);
+            }
+        }
+
+        .veal1 {
+            top: 0%;
+            left: 50%;
+        }
+
+        .veal2 {
+            top: 15%;
+            left: 85%;
+        }
+
+        .veal3 {
+            top: 50%;
+            left: 100%;
+        }
+
+        .veal4 {
+            top: 85%;
+            left: 85%;
+        }
+
+        .veal5 {
+            top: 100%;
+            left: 50%;
+        }
+
+        .veal6 {
+            top: 85%;
+            left: 15%;
+        }
+
+        .veal7 {
+            top: 50%;
+            left: 0%;
+        }
+
+        .veal8 {
+            top: 15%;
+            left: 15%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="container-fluid services-sec">
+        <div class="veal-container d-flex align-items-center">
+            <!-- Biggest Veal -->
+            <div class="biggest-veal">
+                <!-- Gradient Lines -->
+                <div class="gradient-line line-90 yg-gradient"></div>
+                <div class="gradient-line line-45 gb-gradient"></div>
+                <div class="gradient-line line-180 gb-gradient"></div>
+                <div class="gradient-line line-135 ro-gradient"></div>
+
+                <!-- Long Veal White -->
+                <div class="long-veal-white">
+                    <div class="long-veal-gradient">
+                        <div class="short-veal-inner-white">
+                            Strategic Digital
+                            Marketing Services
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Short Veal White -->
+                <div class="short-veal-white veal1">
+                    <div class="short-veal-gradient yg-gradient">
+                        <div class="short-veal-inner-small">
+                            <img src="assets/1.png" alt="1">
+                            <span>Content Creation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="short-veal-white veal2">
+                    <div class="short-veal-gradient gb-gradient">
+                        <div class="short-veal-inner-small">
+                            <img src="assets/2.png" alt="2">
+                            <span>Optimize Content</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="short-veal-white veal3">
+                    <div class="short-veal-gradient ro-gradient">
+                        <div class="short-veal-inner-small">
+                            <img src="assets/5.png" alt="5">
+                            <span>Content Evaluation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="short-veal-white veal4">
+                    <div class="short-veal-gradient gb-gradient">
+                        <div class="short-veal-inner-small">
+                            <img src="assets/2.png" alt="2">
+                            <span>Videography</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="short-veal-white veal5">
+                    <div class="short-veal-gradient yg-gradient">
+                        <div class="short-veal-inner-small">
+                            <img src="assets/1.png" alt="1">
+                            <span>Website<br>Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="short-veal-white veal6">
+                    <div class="short-veal-gradient bp-gradient">
+                        <div class="short-veal-inner-small">
+                            <img src="assets/3.png" alt="3">
+                            <span>Google Ads</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="short-veal-white veal7">
+                    <div class="short-veal-gradient po-gradient">
+                        <div class="short-veal-inner-small">
+                            <img src="assets/4.png" alt="4">
+                            <span>Content Strategy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="short-veal-white veal8">
+                    <div class="short-veal-gradient bp-gradient">
+                        <div class="short-veal-inner-small">
+                            <img src="assets/5.png" alt="5">
+                            <span>Develop Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
