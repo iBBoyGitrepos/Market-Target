@@ -34,14 +34,6 @@
     letter-spacing: 2.88px;
 }
 
-.hero-sec h1,
-h2,
-p,
-li,
-button {
-    animation: fadeInDown 1s ease-in-out;
-}
-
 @keyframes fadeInDown {
     from {
         transform: translateY(-20px);
@@ -54,32 +46,12 @@ button {
     }
 }
 
-
-.hero-sec p {
-    color: #000000;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 0px;
-    opacity: 0.6;
-}
-
 .hero-sec button {
-    width: 243px;
-    height: 78px;
-    border-radius: 192px;
-    background: linear-gradient(328.68deg, #EA5B0C 13.03%, #FFC9AB 120.61%);
-    border: 1px solid;
-    border-image-source: linear-gradient(283.81deg, rgba(255, 255, 255, 0.69) 11.22%, rgba(255, 255, 255, 0.25) 89.57%);
-    box-shadow: 0px 4px 20px 0px #00000040, 0px 34px 50px 0px #073F4312;
-    font-size: 20px;
-    letter-spacing: 0.4px;
     color: #001E61;
 }
 
 .hero-sec button:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
+    color: #FFF;
 }
 
 .gif-wrapper {
@@ -139,10 +111,6 @@ button {
     .hero-gif {
         margin: 0;
         margin-top: 430px;
-    }
-
-    .hero-sec button {
-        width: 100%;
     }
 }
 
