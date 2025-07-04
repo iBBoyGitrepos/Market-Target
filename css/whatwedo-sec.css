@@ -1,0 +1,118 @@
+.whatwedo-sec {
+    position: relative;
+}
+
+section#whatWeDo {
+    overflow: hidden;
+}
+
+section#whatWeDo h2 {
+    text-align: center;
+}
+
+section#whatWeDo p.description {
+    text-align: center;
+    width: 38%;
+    margin: auto;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card-item {
+    flex: 0 0 auto;
+    width: calc(50% - 20px);
+    margin: 0 10px;
+    padding: 20px;
+    user-select: none;
+}
+
+.card-item p {
+    text-align: start;
+}
+
+section#whatWeDo p, section#whatWeDo li {
+    font-size: 18px;
+}
+
+section#whatWeDo ul {
+    font-size: 18px;
+    text-align: start;
+}
+
+.card-item img {
+    width: 20%;
+    height: 19%;
+}
+
+.nav-btn {
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #003366;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.nav-btn.left {
+    left: 5%;
+}
+
+.nav-btn.right {
+    right: 5%;
+}
+
+.nav-btn img {
+    width: 30%;
+}
+
+@media (max-width: 1200px) {
+    section#whatWeDo p.description {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media(max-width: 768px) {
+    section#whatWeDo {
+        padding-top: 80px;
+    }
+    .card-item {
+        width: calc(100% - 20px);
+    }
+
+    section#whatWeDo p.description {
+        width: 100%;
+    }
+}
+
+@media (max-width: 379px) {
+    .card-item {
+        padding: 0;
+    }
+
+    .nav-btn {
+        width: 30px;
+        height: 30px;
+    }
+}
