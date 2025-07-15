@@ -209,3 +209,10 @@ svg.burger {
         color: #000;
     }
 }
+
+@media (max-width: 771px) {
+    .logo {
+        width: 100px;
+        height: auto; 
+    }
+}

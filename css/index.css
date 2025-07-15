@@ -18,7 +18,8 @@ button {
 
 .short-veal-inner-white,
 .services-sec h2,
-.whatwedo-sec h2 {
+.whatwedo-sec h2,
+.howcanwehelpyou-sec h2 {
     color: #001E61;
     font-weight: 900;
     font-size: 42px;
@@ -36,6 +37,7 @@ h3 {
 .hero-sec p,
 .services-sec p,
 .whatwedo-sec p,
+.howcanwehelpyou-sec P,
 li {
     color: #000000;
     font-size: 22px;
