@@ -51,7 +51,8 @@ li {
 }
 
 .hero-sec button,
-.services-sec button {
+.services-sec button,
+.subscribe-sec button {
     max-width: 243px;
     width: 100%;
     height: 78px;

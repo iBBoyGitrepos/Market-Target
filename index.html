@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/whatwedo-sec.css">
     <link rel="stylesheet" href="css/howcanwehelpyou-sec.css">
     <link rel="stylesheet" href="css/articlenblog-sec.css">
+    <link rel="stylesheet" href="css/subscribe-sec.css">
 </head>
 
 <body>
@@ -500,7 +501,7 @@
     </section>
     <!-- ========== HOWCANWEHELPYOU: SECTION END ==================================== -->
 
-    <!-- ========== HOWCANWEHELPYOU: SECTION START ==================================== -->
+    <!-- ========== ARTICALENBLOG: SECTION START ==================================== -->
     <section class="container-fluid articlenblog-sec">
         <div class="container p-0">
             <div
@@ -595,7 +596,28 @@
             </div>
         </div>
     </div>
-    <!-- ========== HOWCANWEHELPYOU: SECTION END ==================================== -->
+    <!-- ========== ARTICALENBLOG: SECTION END ==================================== -->
+
+    <!-- ========== SUBSCRIBE: SECTION START ==================================== -->
+    <section class="container-fluid subscribe-sec">
+        <div class="container">
+            <div class="gray-box position-relative">
+                <img src="assets/net.png" alt="net bacground picture" class="net position-absolute">
+                <img src="assets/graphical part 5.png" alt="graphical part picture" class="graphic5 position-absolute">
+                <img src="assets/3d character.png" alt="3d character picture" class="character position-absolute">
+
+                <div class="main-content d-flex flex-column justify-content-center gap-4 h-100 position-relative z-2">
+                    <h3>Subscribe to get information, latest news and other interesting offers about</h3>
+                    <h2>Market Target</h2>
+                    <div class="d-flex flex-column flex-md-row gap-3 gap-md-4 mt-4">
+                        <input type="email" name="email" id="email" placeholder="Your email">
+                        <button class="btn fw-semibold lh-1">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== SUBSCRIBE: SECTION END ==================================== -->
 
     <!-- Development spaceing (temprary) -->
     <div class="dev-spaceing"></div>
@@ -615,43 +637,6 @@
     <script src="js/whatwedo-sec.js"></script>
     <script src="js/howcanwehelpyou-sec.js"></script>
     <script src="js/articlenblog-sec.js"></script>
-
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const tabs = document.querySelectorAll(".tab");
-            const tabBar = document.querySelector(".tab-bar");
-            const tabWrapper = document.querySelector(".tabs-wrapper");
-
-            let activeTab = document.querySelector(".tab.active");
-
-            function centerUnderline(el) {
-                const wrapperRect = tabWrapper.getBoundingClientRect();
-                const elRect = el.getBoundingClientRect();
-
-                const elCenter = elRect.left + elRect.width / 2;
-                const wrapperLeft = wrapperRect.left;
-
-                const underlineLeft = elCenter - wrapperLeft - tabBar.offsetWidth / 2;
-                tabBar.style.transform = `translateX(${underlineLeft}px)`;
-            }
-
-            tabs.forEach(tab => {
-                tab.addEventListener("click", () => {
-                    document.querySelector(".tab.active")?.classList.remove("active");
-                    tab.classList.add("active");
-                    activeTab = tab;
-                    centerUnderline(activeTab);
-                });
-
-                tab.addEventListener("mouseenter", () => centerUnderline(tab));
-                tab.addEventListener("mouseleave", () => centerUnderline(activeTab));
-            });
-
-            window.addEventListener("load", () => centerUnderline(activeTab));
-            window.addEventListener("resize", () => centerUnderline(activeTab));
-        });
-    </script> -->
-
     <!-- ========== LAYERZ: SCRIPT LINKS END ============================ -->
 
 </body>
