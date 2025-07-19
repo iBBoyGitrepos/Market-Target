@@ -58,6 +58,10 @@
     letter-spacing: 0.36px;
 }
 
+.subscribe-sec input:hover {
+    transform: scale(1.03);
+}
+
 @media (max-width: 991px) {
     .main-content {
         padding-left: 80px;

@@ -82,6 +82,13 @@
     border-radius: 192px;
     border: 1px solid #EA5B0C;
     color: #EA5B0C;
+    transition: all .3s ease;
+}
+
+.articlenblog-sec button.reed-more:hover, .show-btn:hover {
+    transform: scale(1.03);
+    color: #001E61;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.15);
 }
 
 .show-btn {
